@@ -15,8 +15,52 @@ function isFalse (value) {
 // 3.
 
 function not (input) {
-    return input * -1;
+    return !input;
 }
+
+// 4.
+function addOne (input) {
+    if (input === Number) {
+        return input + 1;
+    } else {
+        return parseFloat(input) + 1;
+    }
+}
+
+// 5.
+function isEven (input) {
+    if (typeof input === "number") {
+        return (input % 2 === 0);
+    } else {
+        return (parseFloat(input) % 2 === 0);
+    }
+}
+
+// 6.
+function isIdentical (inputOne, inputTwo) {
+    return inputOne === inputTwo;
+}
+
+// 7.
+function isEqual (inputOne, inputTwo) {
+    return inputOne == inputTwo;
+}
+
+// 8.
+function or (inputOne, inputTwo) {
+    return inputOne || inputTwo;
+}
+
+// 9.
+function and (inputOne, inputTwo) {
+    return inputOne && inputTwo;
+}
+
+// 10.
+function concat (inputOne, inputTwo) {
+    return (inputOne.toString() + inputTwo.toString());
+}
+
 
 /**
  * Write your solutions here.
