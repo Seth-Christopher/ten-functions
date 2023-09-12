@@ -1,5 +1,23 @@
 "use strict";
 
+// 1.
+function isTrue (input) {
+    return input === true;
+}
+
+
+// 2.
+
+function isFalse (value) {
+    return value === false;
+}
+
+// 3.
+
+function not (input) {
+    return input * -1;
+}
+
 /**
  * Write your solutions here.
  *
