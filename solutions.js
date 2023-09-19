@@ -28,14 +28,11 @@ function addOne (input) {
 }
 
 // 5.
-function isEven (input) {
-    if (typeof input === "number") {
-        return (input % 2 === 0);
-    } else {
-        return (parseFloat(input) % 2 === 0);
+function isEven (input){
+    if ( typeof input === 'string' || input % 2 === 0){
+        return parseInt(input);
     }
 }
-
 // 6.
 function isIdentical (inputOne, inputTwo) {
     return inputOne === inputTwo;
